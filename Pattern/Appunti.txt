@@ -1,0 +1,18 @@
+***TEORIA DI BASE
+- WEAK REFERENCE
+In .NET, qualsiasi riferimento normale a un altro oggetto è un riferimento forte. Cioè, quando dichiari una variabile di un tipo che non è un tipo primitivo/valore, stai dichiarando un riferimento forte.
+Se mantieni un riferimento forte a un oggetto direttamente in una variabile statica o in una variabile locale, non può essere raccolto. Inoltre, se un tale oggetto contiene riferimenti ad altri oggetti, anche questi altri oggetti non possono essere raccolti. Cioè, un intero grafico di oggetti che hanno "radici" è considerato vivo e non può essere raccolto. Questo è il motivo per cui gli oggetti che stai utilizzando non vengono raccolti mentre sono in uso, vengono utilizzati direttamente o indirettamente tramite variabili statiche o variabili locali nello stack di chiamate.
+Quindi, sapendo cos'è un riferimento forte, possiamo capire un riferimento debole.
+Un riferimento debole è un riferimento a un oggetto che consente comunque la raccolta di tale oggetto. In tal caso, il riferimento debole diventerà null.
+
+
+***CICLI - FOREACH
+- CICLARE UN ENUM
+foreach(NomeEnum var in Enum.GetValues(typeof(NomeEnum)))
+
+
+
+***COMPILATORE
+- nomeof e typeof non sono funzioni, sono degli operatori a compile time e sono valutati a compile time
+- Activator.CreateInstance equivale a new, esegue un'instanziazione a run time
+
