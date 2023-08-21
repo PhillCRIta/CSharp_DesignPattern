@@ -16,7 +16,7 @@ class Program
             Usati per la gestione della struttura delle classi e dei membri.
             Involucri che imitano la classe sottostante, va fatta attenzione a un buon design della funzionalità
         */
-        /*
+        /*  
             Non hanno un tema centrale, sono tutti diversi, ci sono alcune sovrapposizioni per alcuni pattern, ma comunque sono unici nel loro approccio.
             Ricoprono in modo unico la risoluzione di un determinato problema.
         */
